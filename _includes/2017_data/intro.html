@@ -85,7 +85,17 @@
 						</div>
                		 </div>
                		 <br>				
-                 <center><a href="#" class="page-scroll btn btn-xl hello">hello everybody</a></center>
+			 <center><a href="#" class="page-scroll btn btn-xl hello">
+				<h1><div id="blink">我亮瞎你的眼睛</div></h1>
+							<script language="javascript"> 
+							function changeColor(){ 
+								var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray"; 
+								color=color.split("|"); 
+								document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
+								} 
+								setInterval("changeColor()",200); 
+							</script>               		        	
+			 </a></center>
             </div>
             <!-- 按钮触发模态框 -->
               <button id="show" style="display: none;" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
